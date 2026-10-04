@@ -1,9 +1,9 @@
-/* Kimchi Coin — KIMCHI on Solana.
+/* Kimchi Coin — KIMCHI on BNB Chain.
    One rAF loop drives the field; everything else is event-driven. */
 (() => {
   'use strict';
 
-  // Solana mint. Stays empty until it is posted on this page and on X.
+  // BEP-20 contract. Stays empty until it is posted on this page and on X.
   const CONTRACT = '';
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const coarse = matchMedia('(pointer: coarse)').matches;
@@ -206,7 +206,7 @@
   async function loadStats() {
     const note = $('#stats-note');
     if (!CONTRACT) {
-      if (note) note.textContent = 'Quotes show up here once the mint is posted.';
+      if (note) note.textContent = 'Quotes show up here once the contract is posted.';
       return;
     }
     try {
@@ -993,4 +993,4 @@
   render();
 })();
 
-/* Solana mint checks wait until a mint is posted on this page. */
+/* BNB Chain checks wait until a contract is posted on this page. */
