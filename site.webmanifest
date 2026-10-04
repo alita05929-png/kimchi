@@ -1,0 +1,12 @@
+{
+  "name": "Kimchi Coin — KIMCHI",
+  "short_name": "KIMCHI",
+  "description": "Kimchi Coin, ticker KIMCHI. A golden shiba on Solana.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070b18",
+  "theme_color": "#070b18",
+  "icons": [
+    { "src": "/assets/img/logo.png", "sizes": "500x500", "type": "image/png", "purpose": "any" }
+  ]
+}
